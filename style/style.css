@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #1b1c22;
+  overflow-x: hidden;
+}
+
+
+.home {
+  width: 100vw;
+  height: 50vh;
+  background: #1b1c22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home h1{
+  color: #fff;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+.about {
+  margin: auto;
+  width: 98vw;
+  height: 80vh;
+  border-radius: 25px;
+  border: 2px solid #272626;
+  background: linear-gradient(0deg, #272626 5%, #1a1a1a 35%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  overflow: visible;
+  width: 250px;
+  height: 254px;
+  margin: 0 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.back {
+  background-color: #151515;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+
+  & strong{
+    width: 90%;
+  }
+
+  & i{
+    color: #fff;
+    font-size: 40px;
+  }
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
+
+
+
+
+footer {
+  padding: 30px 0;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+}
+
+footer .left{
+  width: 40%;
+  height: 100%;
+
+  & h3{
+    margin: 10px 30px;
+    color: #9ca3af;
+  }
+}
+
+footer .right{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: end;
+}
+
+.links{
+  margin: 0 40px;
+
+  & h3{
+    margin: 15px 0;
+  }
+
+  & p{
+    color: #9ca3af;
+  }
+}
